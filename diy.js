@@ -2,6 +2,7 @@
 	var oldData;
 	var html = '';
 	html += '<a class="diy export" data-type="json">导出json</a>',
+	html += '<a class="diy export" data-type="png">导出png</a>',
 	html += '<a class="diy export" data-type="md">导出md</a>',
 	html += '<a class="diy export" data-type="km">导出km</a>',
 	html += '<button class="diy input">',
@@ -50,6 +51,9 @@
 				break;
 			case 'md':
 				exportType = 'markdown';
+				break;
+			case 'png':
+				exportType = 'png';
 				break;
 			default:
 				exportType = type;
